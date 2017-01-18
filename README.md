@@ -21,7 +21,7 @@
 * MaxWaitSize int //最大等待数目，当连接池满后，新建连接将等待池中连接释放后才可以继续，本值限制最大等待的数量，超过本值后将抛出异常。默认值: 1000
 * HealthSecond int 健康检查时间隔，单位为秒。默认值: 300。通过ping方法维护连接的可用性，并定期回收长期不用的连接。
 
-更多说明请见[这里](https://gowalker.org/github.com/seefan/gossdb)
+更多说明请见[这里](https://gowalker.org/github.com/runneremerson/gossdb)
 
 所有的API基本上忠于ssdb的原始API用法，只针对go的特点增加部分方法。所以也可以参照官方文档使用。
 
