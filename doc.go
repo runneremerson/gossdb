@@ -15,22 +15,22 @@
 //		AcquireIncrement: 5,
 //	})
 //	if err != nil {
-//		log.Fatal(err)
+//		fmt.Println(err)
 //		return
 //	}
 //
 //
 //	c, err := pool.NewClient()
 //	if err != nil {
-//		log.Println(idx, err.Error())
+//		fmt.Println(idx, err.Error())
 //		return
 //	}
 //	defer c.Close()
 //	c.Set("test","hello world.")
 //	re, err := c.Get("test")
 //	if err != nil {
-//		log.Println(err)
+//		fmt.Println(err)
 //	} else {
-//		log.Println(re, "is get")
+//		fmt.Println(re, "is get")
 //	}
 package gossdb

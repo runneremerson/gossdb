@@ -2,6 +2,7 @@ package gossdb
 
 import (
 	"encoding/json"
+	_ "fmt"
 	"strconv"
 	"time"
 
@@ -30,7 +31,7 @@ func (this *Client) Start() error {
 	if this.isOpen {
 		return nil
 	}
-	//log.Println("set pwd", AuthPassword)
+	//fmt.Println("set pwd", AuthPassword)
 	this.password = AuthPassword
 	db, err := ssdb.Connect(this.pool.cfg.Host, this.pool.cfg.Port)
 	if err != nil {
@@ -145,7 +146,7 @@ func makeError(resp []string, errKey ...interface{}) error {
 
 //通用调用方法，如果有需要在所有方法前执行的，可以在这里执行
 func (this *Client) Do(args ...interface{}) ([]string, error) {
-	//log.Println("auth:", this.password, args)
+	//fmt.Println("auth:", this.password, args)
 	if this.password != "" {
 		resp, err := this.Client.Do("auth", []string{this.password})
 		if err != nil {
