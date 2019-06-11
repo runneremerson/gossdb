@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/seefan/goerr"
-	"github.com/seefan/to"
+	"github.com/runneremerson/goerr"
+	"github.com/runneremerson/to"
 	"github.com/ssdb/gossdb/ssdb"
 )
 

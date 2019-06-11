@@ -1,6 +1,6 @@
 package gossdb
 
-import "github.com/seefan/goerr"
+import "github.com/runneremerson/goerr"
 
 //设置指定 key 的值内容
 //

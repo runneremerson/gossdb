@@ -2,7 +2,7 @@ package gossdb
 
 import (
 	"encoding/json"
-	"github.com/seefan/to"
+	"github.com/runneremerson/to"
 	"time"
 )
 
